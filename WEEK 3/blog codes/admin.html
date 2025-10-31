@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <a href="index.html" style="color:white;">View Site</a>
+  </header>
+
+  <!-- Login Screen -->
+  <div class="admin-login" id="login-section">
+    <h2>Admin Login</h2>
+    <input type="text" id="admin-username" placeholder="Username" />
+    <input type="password" id="admin-password" placeholder="Password" />
+    <button onclick="adminLogin()">Login</button>
+    <p style="color:red;" id="login-error"></p>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="container" id="dashboard" style="display:none;">
+    <h2>Create New Post</h2>
+    <input type="text" id="post-title" placeholder="Post Title" />
+    <textarea id="post-content" placeholder="Post Content"></textarea>
+    <label><input type="checkbox" id="post-published"> Published</label>
+    <button onclick="createPost()">Add Post</button>
+
+    <h2>Manage Posts</h2>
+    <div id="admin-posts"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    checkLogin();
+    displayAdminPosts();
+  </script>
+</body>
+</html>

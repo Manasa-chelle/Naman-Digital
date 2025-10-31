@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name – Portfolio</title>
+    <!-- Pure HTML only: no CSS/JS used. Customize the text and placeholders below. -->
+  </head>
+  <body>
+    <!-- ===================== HEADER ===================== -->
+    <header>
+      <h1>Your Name</h1>
+      <p>Job Title • City, Country</p>
+      <nav aria-label="Primary">
+        <a href="#about">About</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#experience">Experience</a> |
+        <a href="#education">Education</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+      <hr />
+    </header>
+
+    <!-- ===================== ABOUT ===================== -->
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <figure>
+          <img src="https://via.placeholder.com/160" alt="Portrait of Your Name" width="160" height="160" />
+          <figcaption>Hi! I’m Your Name.</figcaption>
+        </figure>
+        <p>
+          Brief intro (2–3 lines). Mention your core strengths, the problems you love solving,
+          and what kinds of roles/opportunities you are looking for.
+        </p>
+        <p>
+          <a href="#contact">Hire me</a> ·
+          <a href="resume.pdf" download>Download résumé (PDF)</a> ·
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        </p>
+        <hr />
+      </section>
+
+      <!-- ===================== PROJECTS ===================== -->
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article>
+          <header>
+            <h3>Project Title One</h3>
+            <p>Short one‑line description of what it does and who it helps.</p>
+          </header>
+          <figure>
+            <img src="https://via.placeholder.com/640x360" alt="Screenshot of Project One" width="640" height="360" />
+            <figcaption>Screenshot or mockup</figcaption>
+          </figure>
+          <p>
+            Explain the problem, your approach, the stack (if relevant), and the outcome/impact. Keep it concise.
+          </p>
+          <p>
+            <a href="#">Live Demo</a> · <a href="#">Source Code</a>
+          </p>
+        </article>
+
+        <hr />
+
+        <article>
+          <header>
+            <h3>Project Title Two</h3>
+            <p>One‑liner value proposition for the project.</p>
+          </header>
+          <figure>
+            <img src="https://via.placeholder.com/640x360" alt="Screenshot of Project Two" width="640" height="360" />
+            <figcaption>Screenshot or mockup</figcaption>
+          </figure>
+          <p>
+            What you built, how you built it, and what results you achieved. Mention your role if it was a team project.
+          </p>
+          <p>
+            <a href="#">Live Demo</a> · <a href="#">Source Code</a>
+          </p>
+        </article>
+        <hr />
+      </section>
+
+      <!-- ===================== SKILLS ===================== -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Languages: HTML, CSS, JavaScript, Python</li>
+          <li>Frameworks: React, Node.js, Django</li>
+          <li>Tools: Git & GitHub, Figma, Postman</li>
+          <li>Cloud/Databases: AWS, Firebase, MySQL</li>
+        </ul>
+
+        <!-- Optional visual indicators with HTML-only elements -->
+        <details>
+          <summary>Skill Levels (optional)</summary>
+          <p>HTML <progress value="90" max="100">90%</progress></p>
+          <p>CSS <progress value="80" max="100">80%</progress></p>
+          <p>JavaScript <progress value="75" max="100">75%</progress></p>
+        </details>
+        <hr />
+      </section>
+
+      <!-- ===================== EXPERIENCE ===================== -->
+      <section id="experience">
+        <h2>Experience</h2>
+        <article>
+          <h3>Company Name – Role</h3>
+          <p><time datetime="2023-06">Jun 2023</time> – <time datetime="2024-12">Dec 2024</time> · City, Country</p>
+          <ul>
+            <li>Result/impact statement starting with an action verb.</li>
+            <li>Another achievement with a metric if possible.</li>
+            <li>Technologies used: List the notable ones.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Company Name – Role</h3>
+          <p><time datetime="2022-01">Jan 2022</time> – <time datetime="2023-05">May 2023</time> · City, Country</p>
+          <ul>
+            <li>Describe responsibilities and measurable outcomes.</li>
+            <li>Highlight collaboration, ownership, and problem‑solving.</li>
+          </ul>
+        </article>
+        <hr />
+      </section>
+
+      <!-- ===================== EDUCATION ===================== -->
+      <section id="education">
+        <h2>Education</h2>
+        <p>
+          <strong>University Name</strong> — Degree / Major
+          (<time datetime="2019">2019</time> – <time datetime="2023">2023</time>)
+        </p>
+        <ul>
+          <li>Relevant coursework or honors here.</li>
+          <li>Clubs, leadership, or notable projects.</li>
+        </ul>
+        <hr />
+      </section>
+
+      <!-- ===================== CONTACT ===================== -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <address>
+          Email: <a href="mailto:you@example.com">you@example.com</a><br />
+          Phone: +91 90000 00000<br />
+          Location: City, Country
+        </address>
+
+        <form action="mailto:you@example.com" method="post" enctype="text/plain">
+          <p>
+            <label for="name">Name</label><br />
+            <input id="name" name="name" type="text" required />
+          </p>
+          <p>
+            <label for="email">Email</label><br />
+            <input id="email" name="email" type="email" required />
+          </p>
+          <p>
+            <label for="message">Message</label><br />
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+      <hr />
+      <p>
+        © <time datetime="2025">2025</time> Your Name. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
